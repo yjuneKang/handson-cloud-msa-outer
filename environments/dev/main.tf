@@ -8,6 +8,12 @@ provider "google" {
   region  = var.region
 }
 
+provider "google-beta" {
+  version = "~> 3.1"
+  project = var.project_id
+  region  = var.region
+}
+
 /*****************************************
   Kubernetes provider configuration
  *****************************************/
@@ -26,3 +32,4 @@ provider "helm" {
     token                  = data.google_client_config.default.access_token
   }
 }
+
