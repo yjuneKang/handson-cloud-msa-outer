@@ -23,7 +23,7 @@ spec:
             - name: SPRING_DATASOURCE_USERNAME
               value: "eshop_user"
             - name: SPRING_DATASOURCE_PASSWORD
-              value: "eshoppassword"
+              value: "password"
 ---
 apiVersion: v1
 kind: Service
